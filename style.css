@@ -29,6 +29,10 @@ body {
     background-color: var(--very-dark-black-blue);
 
 }
+.pattern-hills{
+    height: 100%;
+    width: 100%;
+}
 
 h2 {
     position: absolute;
@@ -112,13 +116,13 @@ p {
 }
 
 .footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
+
+    justify-content: center;
     overflow: hidden;
+   
 }
 
-.footer>img {
+.footer,img {
     width: 100%;
 }
 
@@ -126,9 +130,10 @@ p {
     position: absolute;
     bottom: 35%;
     left: 50%;
+    text-align: center;
     transform: translateX(-50%);
     display: flex;
-	 justify-content: center;
+    justify-content: center;
     width:100%;
 }
 
@@ -174,8 +179,12 @@ p {
         transform: rotateX(0deg);
     }
 }
-
+  
 @media (min-width: 376px) {
+    .pattern-hills{
+        width: 100%;
+    }
+    
     .flip-card {
         font-size: 5rem;
     }
@@ -208,13 +217,15 @@ p {
 
 
   }
+    
     @media only screen and (max-width: 920px) {
         .countdown {
             display: flex;
             gap: 10px;
             text-align: center;
+            width: 100%;
         }
-	            .footer{
+        .footer{
             width:100%;
         }
         
@@ -229,6 +240,7 @@ p {
     width:100%;
 }
         
+        
 
     }
 
@@ -239,7 +251,8 @@ p {
             gap: 10px;
             text-align: center;
         }
-	    .media {
+        
+.media {
     position: absolute;
     bottom: 35%;
     left: 50%;
